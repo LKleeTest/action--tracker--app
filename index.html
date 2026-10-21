@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Meeting Action Tracker</title>
 <style>
-/* Muted neutral palette, one orange accent. Red is reserved for overdue. */
+/* Light theme only. Muted neutral palette, one orange accent. Red is reserved for overdue. */
 :root {
+  color-scheme: light;
   --bg: #f4f3f0;
   --card: #ffffff;
   --ink: #2b2a28;
@@ -20,21 +21,6 @@
   --danger-soft: #fbeceb;
   --shadow: 0 1px 2px rgba(40, 35, 30, .06), 0 4px 16px rgba(40, 35, 30, .05);
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1c1b1a; --card: #262523; --ink: #ecebe8; --muted: #a29e97;
-    --line: #3a3835; --soft: #302e2c; --accent: #e8814a; --accent-ink: #1c1b1a;
-    --accent-soft: #3a2a20; --danger: #ef6b5c; --danger-soft: #3a2422;
-    --shadow: 0 1px 2px rgba(0,0,0,.3);
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #1c1b1a; --card: #262523; --ink: #ecebe8; --muted: #a29e97;
-  --line: #3a3835; --soft: #302e2c; --accent: #e8814a; --accent-ink: #1c1b1a;
-  --accent-soft: #3a2a20; --danger: #ef6b5c; --danger-soft: #3a2422;
-  --shadow: 0 1px 2px rgba(0,0,0,.3);
-}
-
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
